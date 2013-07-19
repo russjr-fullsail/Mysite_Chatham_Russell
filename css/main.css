@@ -1,0 +1,125 @@
+/* This is the main style sheet ----------------------------------*/
+
+body{
+	font-family: 'Oswald', sans-serif;
+	color: black;
+	font-size: 16px;
+	line-height: 1.5;
+	width: 790px;
+	margin: 0 auto;	
+	background-image: url("../images/bg_image.jpg");
+	background-repeat: repeat-x;
+}
+
+h1,h2,h3{
+	font-family: 'Sonsie One', cursive;	
+	text-shadow: 1px 1px 1px #f00
+}
+
+h1{
+	color: red;
+	text-shadow: 4px 4px 4px #aaa;
+}
+
+p{
+	font-family: 'Oswald', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+ol li{
+	list-style-type: none;
+	display: inline;
+	border-style: solid;
+	border-color: red;
+	border-width: 1px;
+	font-size: 20px;
+	padding: 5px;
+}
+
+ol{
+	overflow: hidden;
+}
+
+ul.b li{
+	list-style-type: none;
+	float: left;
+	padding: 10px;
+	position: center;
+}
+ul.b img{
+	border-style: groove;
+	border-color: black;
+	border-width: 4px
+}
+
+ul.d{
+	list-style-type: square;
+	background-image: url("../images/jeeplogo.png");
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-size: 150px 136px;
+}
+
+nav, .nav{
+	position: absolute;
+	top: 0;
+	width: 790px;
+	text-align: center;
+	
+}
+section{
+	position: relative;
+	top: 33px;
+}
+
+#mods{
+	background-image: url("../images/bg_image2.jpg");
+	background-repeat: repeat-x;
+	clear: left;
+}
+
+a:link{
+	color: silver;
+}
+
+a:active{
+	color: red;
+}
+
+a:visited{
+	background: none;
+	color: gray;
+}
+
+a:hover{
+	background:red;
+	color: black;
+}
+
+#project{
+	opacity: 0.75;
+	columns:3;
+	-webkit-columns:100px 3; /* Safari and Chrome */
+	-moz-columns:100px 3; /* Firefox */	
+}
+
+.submit{
+	border:1px solid #df0909; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:12px;font-family:arial, helvetica, sans-serif; padding: 10px 10px 10px 10px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF;
+ 	background-color: #f62b2b; background-image: -webkit-gradient(linear, left top, left bottom, from(#f62b2b), to(#d20202));
+ 	background-image: -webkit-linear-gradient(top, #f62b2b, #d20202);
+ 	background-image: -moz-linear-gradient(top, #f62b2b, #d20202);
+ 	background-image: -ms-linear-gradient(top, #f62b2b, #d20202);
+ 	background-image: -o-linear-gradient(top, #f62b2b, #d20202);
+ 	background-image: linear-gradient(to bottom, #f62b2b, #d20202);
+}
+
+.submit:hover{
+ 	border:1px solid #b30808;
+ 	background-color: #e40a0a; background-image: -webkit-gradient(linear, left top, left bottom, from(#e40a0a), to(#9f0202));
+ 	background-image: -webkit-linear-gradient(top, #e40a0a, #9f0202);
+ 	background-image: -moz-linear-gradient(top, #e40a0a, #9f0202);
+ 	background-image: -ms-linear-gradient(top, #e40a0a, #9f0202);
+ 	background-image: -o-linear-gradient(top, #e40a0a, #9f0202);
+ 	background-image: linear-gradient(to bottom, #e40a0a, #9f0202);
+}
