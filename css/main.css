@@ -3,9 +3,9 @@
 body{
 	font-family: 'Oswald', sans-serif;
 	color: black;
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 1.5;
-	width: 790px;
+	width: 90%; /* width 790px */
 	margin: 0 auto;	
 	background-image: url("../images/bg_image.jpg");
 	background-repeat: repeat-x;
@@ -23,18 +23,20 @@ h1{
 
 p{
 	font-family: 'Oswald', sans-serif;
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 1.5;
 }
 
 ol li{
 	list-style-type: none;
 	display: inline;
-	border-style: solid;
+	border-left: solid;
+	border-right: solid;
 	border-color: red;
-	border-width: 1px;
-	font-size: 20px;
-	padding: 5px;
+	border-width: .104167%; /* 1px */
+	font-size: 1.5em;
+	padding: .520833%; /* 5px */
+	float: left;
 }
 
 ol{
@@ -44,13 +46,14 @@ ol{
 ul.b li{
 	list-style-type: none;
 	float: left;
-	padding: 10px;
+	padding: 1.041667%; /* 10px */
 	position: center;
 }
+
 ul.b img{
 	border-style: groove;
 	border-color: black;
-	border-width: 4px
+	border-width: .416667%; /* 4px */
 }
 
 ul.d{
@@ -58,19 +61,19 @@ ul.d{
 	background-image: url("../images/jeeplogo.png");
 	background-repeat: no-repeat;
 	background-position: top right;
-	background-size: 150px 136px;
+	background-size: 25%;
 }
 
 nav, .nav{
 	position: absolute;
 	top: 0;
-	width: 790px;
+	width: 90%; /* width 960px */
 	text-align: center;
 	
 }
 section{
 	position: relative;
-	top: 33px;
+	top: 40px;
 }
 
 #mods{
@@ -99,7 +102,7 @@ a:hover{
 
 #project{
 	opacity: 0.75;
-	columns:3;
+	columns: 3;
 	-webkit-columns:100px 3; /* Safari and Chrome */
 	-moz-columns:100px 3; /* Firefox */	
 }
@@ -122,4 +125,54 @@ a:hover{
  	background-image: -ms-linear-gradient(top, #e40a0a, #9f0202);
  	background-image: -o-linear-gradient(top, #e40a0a, #9f0202);
  	background-image: linear-gradient(to bottom, #e40a0a, #9f0202);
+}
+
+/*=Media Queries
+=========================================================*/
+/* Tablet Portrait size to standard 960px (devices and browsers)*/
+@media screen and (min-width: 768px) and (max-width= 959px){
+ body{
+ background-image: none;
+ 
+ }
+ article{
+ font-size: 1em;
+ }
+h2, h3{
+	text-shadow: none;
+}
+
+/* Mobile Landscape size to Mobile Portrait (devices and browsers) */
+@media screen and (min-width: 480px) and (max-width= 767px){
+	body{
+	background-image: none;
+}
+	section{
+	position: relative;
+	top: 45px;
+}
+
+/* Mobile Portrait size to Mobile Landscape Size (devices and browsers) */
+@media screen and (min-width: 479px) {
+body{
+	display: none;
+}
+#mods{
+	background-image: none;
+}
+ul.d{
+	display:none; float: left;
+}
+#project{
+	clear: left;
+}	
+head {
+	display:none
+}
+section{
+	position: relative;
+	top: 50px;
+}
+h1{
+	clear: both;
 }
